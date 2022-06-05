@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="tst.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">DEScrypt</div>
+            <div class="code">
+                <form action="">
+                    <input type="text" placeholder="text (hex 64 bit)" id="plaintext">
+                    <input type="text" placeholder="key (key 64 bit)" id="key" value="">
+                    <div class="button">
+                        <input type="button" value="Encrypt" id="encrypt" onclick="runEn()">
+                        <input type="button" value="Decrypt" id="decrypt" onclick="runDe()">
+                    </div>
+                </form>
+                <div class="answer" id="answer"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-container">
+                <!-- <div class="input">Input (64 bits)</div>
+                <i class="fa-solid fa-arrow-down" style="margin-left: 10%;"></i>
+                <div class="IP">Initial Permutation</div>
+                <i class="fa-solid fa-pipe"
+                style="height: 5px; color:black; width:2px;"></i>
+                <div class="left-half"> Left Half (32 bits)</div>
+                <div class="right-half">Right Half (32 bits)</div>
+                <div class="xor"> + </div>
+                <div class="cipher-func"> Cipher Function</div> -->
+                <img src="des.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="tst.js">
+    </script>
+</body>
+</html>
